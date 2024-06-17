@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}">
+
+<head>
+	<title>Access Denied</title>
+	
+</head>
+
+<body>
+
+	<div class="container" layout:fragment="content">
+
+		<center>
+			<h3 class="mt-5 mb-3" style="color:#008000;">Access Denied</h3>
+			<h3 style="color:#008000;">Sorry, you are not authorized to access this page.</h3>
+
+
+		</center>
+
+		<div style="text-align: right;" class="mt-5">
+			<a th:href="@{/}">Back to Home</a>
+		</div>
+
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}">
+
+<head>
+	<title>Book Detail</title>
+	<style>
+		td {
+			color: slategrey !important;
+			font-size: 18px;
+		}
+
+		tr td:first-child {
+			width: 200px;
+			font-weight: 500;
+			border-right: solid 1px #dee2e6;
+		}
+
+		#title {
+			font-weight: 500;
+			border-right: solid 1px #dee2e6;
+		}
+
+		tr td:last-child {
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="container" layout:fragment="content">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="container col-md-10 mt-5">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td rowspan="6"><img th:src="@{'/img/' + ${book.img}}" alt="Picture"></td>
+						<td id="title">Title</td>
+						<td th:text="${book.title}"></td>
+					</tr>
+					<tr>
+						<td>Isbn</td>
+						<td th:text="${book.isbn}"></td>
+					</tr>
+					<tr>
+						<td>Author</td>
+						<td th:text="${book.author}"></td>
+					</tr>
+					<tr>
+						<td>Price</td>
+						<td th:text="'$'+${book.price}"></td>
+					</tr>
+					<tr>
+						<td>Published Date</td>
+						<td th:text="${book.publishedDate}"></td>
+					</tr>
+					<tr>
+						<td>Summary</td>
+						<td th:text="${book.summary}"></td>
+					</tr>
+
+
+				</tbody>
+			</table>
+		</div>
+
+
+
+
+		<div style="text-align: right;" class="mt-5">
+			<a th:href="@{/}">Back to Home</a>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
