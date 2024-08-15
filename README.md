@@ -1,5 +1,5 @@
 # Book Store Management System
-Maven / Spring Boot / REST API / Spring MVC / Spring Security / ThymeLeaf / Mysql
+Maven / Spring Boot / REST API / Spring MVC / Spring Security / ThymeLeaf / Mysql / Hibernate
 
 # Project Description
 •	Maven Project using Spring Initializer. 
