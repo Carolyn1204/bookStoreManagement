@@ -2,6 +2,8 @@
 Maven / Spring Boot / REST API / Spring MVC / Spring Security / ThymeLeaf / Mysql / Hibernate
 
 # Project Description
+A fully functional Online Bookstore Management System where staff can manage the inventory and customers can browse books and make purchase request.
+
 •	Maven Project using Spring Initializer. 
 
 •	RESTful API using Spring Boot that handle all CRUD operations related to books, such as adding a new book, fetching details of a book, updating book details, and deleting a book.. 
